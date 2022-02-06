@@ -1,0 +1,110 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.logo{
+	display: flex;
+	justify-content: center;	
+}
+.logoimg {
+	width: 13%;
+}
+
+.caption-center{
+	top: 40%;
+}
+
+nav{
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+	padding: 1%;
+}
+a{
+	padding: 0 5%;
+}
+.center{
+	display: grid;
+	place-items: center;
+	padding: 4% 0;
+}
+.contenedor{
+	padding: 4% 0;
+}
+#fresa{
+	width: 60%;
+	height: auto;
+}
+.column {
+    float: center;
+    width: 50%;
+}
+
+.left{
+	padding: 0.5% 0 0 20%;
+}
+.rigth{
+	padding: 0.5% 20% 0 0;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.receta{
+	background-image: url(background.jpg);
+	background-position: center center;
+  	background-repeat: no-repeat;
+	background-size: 100% auto;
+	display: grid;
+      grid-template-areas: 
+        "filer content  sidebar filer2";
+      grid-template-columns : 1fr 1fr 1fr 1fr;
+      grid-template-rows : auto;
+	  
+}
+.textcebolla{
+	grid-area :content;
+	padding: 0 5% 0 0;
+	background-color: white;
+	background-size:  auto 100%;
+}
+.imgcebolla{
+	grid-area: sidebar;
+}	
+
+.galeria{
+	text-align: center;
+	padding: 2% 0;
+	display: grid;
+      grid-template-areas: 
+        "filerg img1 img2 img3 filerg2";
+      grid-template-columns : 1fr 2fr 2fr 2fr 1fr;
+      grid-template-rows : auto;
+	  gap: 0.5%;
+}
+.img1{
+	grid-area: img1;
+}
+.img2{
+	grid-area: img2;
+}
+.img3{
+	grid-area: img3;
+}
+
+.footer{
+	background-image: url(footer.png);
+	background-position: center;
+  	background-repeat: no-repeat;
+	background-size: 100% auto;
+  	padding: 100px;
+  	display: flex;
+	justify-content: center;
+}
