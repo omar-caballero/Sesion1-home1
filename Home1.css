@@ -4,6 +4,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 body{
 	font-family: 'Roboto Condensed', sans-serif;
 }
@@ -19,15 +20,17 @@ body{
 	top: 40%;
 }
 
-nav{
-	display: flex;
-	justify-content: center;
-	justify-items: center;
-	padding: 1%;
+.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
 }
-a{
-	padding: 0 5%;
+
+.navbar-nav > li{
+	margin-left : 2em;
+    margin-right : 2em;
 }
+
 .center{
 	display: grid;
 	place-items: center;
@@ -40,6 +43,7 @@ a{
 	width: 60%;
 	height: auto;
 }
+
 .column {
     float: center;
     width: 50%;
@@ -57,6 +61,7 @@ a{
     clear: both;
 }
 
+
 .receta{
 	background-image: url(background.jpg);
 	background-position: center center;
@@ -66,15 +71,24 @@ a{
       grid-template-areas: 
         "filer content  sidebar filer2";
       grid-template-columns : 1fr 1fr 1fr 1fr;
-      grid-template-rows : auto;
-	  
+      grid-template-rows : auto;	  
 }
+
 .textcebolla{
 	grid-area :content;
-	padding: 0 5% 0 0;
+	padding: 30% 10% 5% 5%;
 	background-color: white;
 	background-size:  auto 100%;
 }
+.textcebolla>p{
+	overflow: hidden;	
+}
+
+
+.justify{
+    text-align: justify;
+}
+
 .imgcebolla{
 	grid-area: sidebar;
 }	
@@ -89,6 +103,21 @@ a{
       grid-template-rows : auto;
 	  gap: 0.5%;
 }
+.redi{
+	width: 100%;
+}
+.rediletra{
+	font-size: 1vw;
+}
+
+.rediletrah5{
+	font-size: 1.5vw;
+}
+
+.rediletrah3{
+	font-size: 2vw;
+}
+
 .img1{
 	grid-area: img1;
 }
@@ -104,7 +133,7 @@ a{
 	background-position: center;
   	background-repeat: no-repeat;
 	background-size: 100% auto;
-  	padding: 100px;
   	display: flex;
+	padding-top: 5%;
 	justify-content: center;
 }
