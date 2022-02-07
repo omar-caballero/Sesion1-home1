@@ -4,7 +4,6 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
 body{
 	font-family: 'Roboto Condensed', sans-serif;
 }
@@ -15,22 +14,13 @@ body{
 .logoimg {
 	width: 13%;
 }
-
 .caption-center{
 	top: 40%;
 }
-
-.navbar-center {
-    position: absolute;
-    left: 50%;
-    transform: translatex(-50%);
-}
-
 .navbar-nav > li{
 	margin-left : 2em;
     margin-right : 2em;
 }
-
 .center{
 	display: grid;
 	place-items: center;
@@ -43,12 +33,10 @@ body{
 	width: 60%;
 	height: auto;
 }
-
 .column {
     float: center;
     width: 50%;
 }
-
 .left{
 	padding: 0.5% 0 0 20%;
 }
@@ -60,8 +48,6 @@ body{
     display: table;
     clear: both;
 }
-
-
 .receta{
 	background-image: url(background.jpg);
 	background-position: center center;
@@ -73,7 +59,6 @@ body{
       grid-template-columns : 1fr 1fr 1fr 1fr;
       grid-template-rows : auto;	  
 }
-
 .textcebolla{
 	grid-area :content;
 	padding: 30% 10% 5% 5%;
@@ -83,16 +68,12 @@ body{
 .textcebolla>p{
 	overflow: hidden;	
 }
-
-
 .justify{
     text-align: justify;
 }
-
 .imgcebolla{
 	grid-area: sidebar;
 }	
-
 .galeria{
 	text-align: center;
 	padding: 2% 0;
@@ -109,15 +90,12 @@ body{
 .rediletra{
 	font-size: 1vw;
 }
-
 .rediletrah5{
 	font-size: 1.5vw;
 }
-
 .rediletrah3{
 	font-size: 2vw;
 }
-
 .img1{
 	grid-area: img1;
 }
@@ -127,7 +105,6 @@ body{
 .img3{
 	grid-area: img3;
 }
-
 .footer{
 	background-image: url(footer.png);
 	background-position: center;
